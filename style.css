@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*fonts*/
+    --font-text: "Noto Sans", sans-serif;
+}
+
+body {
+    
+    background-color: #0c0c0c;
+    font-family: var(--font-text);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 1920px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#port-link a {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-left: 40px;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #0c0c0c;
+    background-color: #00ff88;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+#presentation {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#presentation .name {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#presentation .name > h2 {
+    color: #828282;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.button {
+    margin-top: 5px;
+}
+
+.button a#cv {
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: 2px solid #00ff88;
+}
+
+.button a#cv:hover {
+    background: #00ff88;
+    color: #0c0c0c;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.button a#contact-me {
+    color: #fff;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-bottom: 2px solid #828282;
+}
+
+.button a#contact-me:hover {
+    border: 2px solid #828282;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.image {
+    width: 15vw;
+}
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+    width: 0;
+}
+
+#about-me .title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#about-me p {
+    color: #828282;
+    width: 50vw;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+  
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.contact-text {
+    
+    font-size: 10px;
+    
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 12px;
+}
+
+.contact-text h2,
+h3 {
+   
+    display: flex;
+    font-weight: 400;
+}
+
+.contact-text h2 {
+    color: #fff;
+
+}
+
+.contact-text h3 {
+    color: #828282;
+}
+
+
+
+
