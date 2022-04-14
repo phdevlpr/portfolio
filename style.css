@@ -8,11 +8,16 @@
 :root {
     /*fonts*/
     --font-text: "Noto Sans", sans-serif;
+    /*colors*/
+    --withe-color: #fff;
+    --background-color: #0c0c0c;
+    --grey-color-light: #828292;
+    --grey-color: #212121;
+    --green-color: #00ff88;
 }
 
 body {
-    
-    background-color: #0c0c0c;
+    background-color: var(--background-color);
     font-family: var(--font-text);
     height: auto;
     scroll-behavior: auto;
@@ -45,7 +50,7 @@ header {
     display: flex;
     align-items: center;
 
-    color: #fff;
+    color: var(--withe-color);
     font-size: 2rem;
     font-weight: 800;
 }
@@ -68,12 +73,12 @@ nav a {
     margin-left: 40px;
     padding: 0.5rem;
     font-size: 1.125rem;
-    color: #fff;
+    color: var(--withe-color);
 }
 
 nav a:hover {
-    color: #0c0c0c;
-    background-color: #00ff88;
+    color: var(--background-color);
+    background-color: var(--green-color);
     border-radius: 2px;
     transition: 1s;
 }
@@ -85,14 +90,14 @@ nav a:hover {
 }
 
 #presentation .name {
-    color: #fff;
+    color: var(--withe-color);
     font-size: 2.25rem;
     font-weight: 400;
     margin: 0;
 }
 
 #presentation .name > h2 {
-    color: #828282;
+    color: var(--grey-color-light);
     font-size: 1.5rem;
     margin-top: 20px;
 }
@@ -104,30 +109,30 @@ nav a:hover {
 }
 
 .button a#cv {
-    color: #fff;
+    color: var(--withe-color);
     font-size: 1rem;
     padding: 10px;
-    border-bottom: 2px solid #00ff88;
+    border-bottom: 2px solid var(--green-color);
 }
 
 .button a#cv:hover {
-    background: #00ff88;
-    color: #0c0c0c;
+    background: var(--green-color);
+    color: var(--background-color);
     border-radius: 4px;
     transition: 1s;
 }
 
 .button a#contact-me {
-    color: #fff;
+    color: var(--withe-color);
     margin-left: 20px;
     padding: 10px;
     font-size: 1rem;
-    border-bottom: 2px solid #828282;
+    border-bottom: 2px solid var(--grey-color-light);
 }
 
 
 .button a#github {
-    color: #fff;
+    color: var(--withe-color);
     font-size: 1rem;
 }
 
@@ -161,13 +166,13 @@ nav a:hover {
 #about-me .title {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: var(--withe-color);
     font-weight: 800;
     font-size: 1.5rem;
 }
 
 #about-me p {
-    color: #828282;
+    color: var(--grey-color-light);
     width: 50vw;
     margin-top: 30px;
     text-align: center;
@@ -189,7 +194,7 @@ nav a:hover {
 
 .contact-text a {
     text-decoration: none;
-    color: #828282;
+    color: var(--grey-color-light);
     font-size: 12px;
 }
 
@@ -201,12 +206,12 @@ h3 {
 }
 
 .contact-text h2 {
-    color: #fff;
+    color: var(--withe-color);
 
 }
 
 .contact-text h3 {
-    color: #828282;
+    color: var(--grey-color-light);
 }
 
 #projects {
@@ -218,7 +223,7 @@ h3 {
 div.title {
     display: flex;
 
-    color: #fff;
+    color: var(--withe-color);
     font-size: 1.5rem;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -235,7 +240,7 @@ div.title {
 
 div.box-shadow {
     
-    background-color: #212121;
+    background-color: var(--grey-color);
     width: 350px;
     height: 240px;
     margin: 10px;
@@ -254,7 +259,7 @@ div.box-shadow {
 }
 
 div.box-shadow h1 {
-    color: #fff;
+    color: var(--withe-color);
     font-size: 25px;
     font-weight: 400;
     margin-left: 25px;
@@ -262,7 +267,7 @@ div.box-shadow h1 {
 }
 
 div.box-shadow p {
-    color: #828282;
+    color: var(--grey-color-light);
     margin-left: 25px;
     font-size: 13px;
     font-weight: 400;
@@ -270,7 +275,7 @@ div.box-shadow p {
 
 #services div.box-shadow {
    
-    border-bottom: 3px solid #00ff88;
+    border-bottom: 3px solid var(--green-color);
 }
 
 #services img.services-icons  {
@@ -289,7 +294,7 @@ div.box-shadow p.service-text {
 .box-shadowSkills {
     display: flex;
     justify-content: center;
-    background-color: #212121;
+    background-color: var(--grey-color);
     width: 150px;
     height: 150px;
     margin-top: 20px;
@@ -305,7 +310,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #212121;
+    background-color: var(--grey-color);
     width: 100%;
     height: 60px;
     margin-top: 100px;
@@ -313,13 +318,13 @@ footer {
 
 .footer p {
     display: flex;
-    color: #fff;
+    color: var(--withe-color);
     font-size: 15px;
     font-weight: 400;
 }
 
 .footer span {
-    color: #00ff88;
+    color: var(--green-color);
     font-weight: 800;
     margin-left: 5px;
 }
