@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin: 0;
+}
+
 .container {
     margin-left: 8rem;
     margin-right: 8rem;
@@ -130,12 +134,6 @@ nav a:hover {
     border-bottom: 2px solid var(--grey-color-light);
 }
 
-
-.button a#github {
-    color: var(--withe-color);
-    font-size: 1rem;
-}
-
 .button a#github img {
     width: 30px;
     margin-left: 50px;
@@ -158,9 +156,8 @@ nav a:hover {
 #about-me {
     display: flex;
     flex-direction: column;
-    
+
     margin-top: 100px;
-    
 }
 
 #about-me .title {
@@ -180,16 +177,14 @@ nav a:hover {
 
 #contact {
     display: flex;
-  
+
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 300px;
 }
 
 .contact-text {
-    
     font-size: 10px;
-    
 }
 
 .contact-text a {
@@ -200,14 +195,12 @@ nav a:hover {
 
 .contact-text h2,
 h3 {
-   
     display: flex;
     font-weight: 400;
 }
 
 .contact-text h2 {
     color: var(--withe-color);
-
 }
 
 .contact-text h3 {
@@ -217,7 +210,6 @@ h3 {
 #projects {
     flex: 1;
     display: flex;
-    
 }
 
 div.title {
@@ -239,7 +231,6 @@ div.title {
 }
 
 div.box-shadow {
-    
     background-color: var(--grey-color);
     width: 350px;
     height: 240px;
@@ -274,11 +265,10 @@ div.box-shadow p {
 }
 
 #services div.box-shadow {
-   
     border-bottom: 3px solid var(--green-color);
 }
 
-#services img.services-icons  {
+#services img.services-icons {
     width: 120px;
     padding-top: 20px;
     padding-left: 20px;
@@ -327,4 +317,245 @@ footer {
     color: var(--green-color);
     font-weight: 800;
     margin-left: 5px;
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 300px;
+        margin: 5px;
+    }
+
+    .container.Column {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 320px;
+        height: 50px;
+        margin: 0;
+    }
+
+    #port-link a {
+        display: flex;
+        font-size: 00.8rem;
+        margin-left: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #presentation {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #presentation .image {
+        display: none;
+    }
+
+    .name h1 {
+        font-size: 1.25rem;
+    }
+
+    #presentation .name > h2 {
+        font-size: 0.8rem;
+    }
+
+
+    .button a#cv {
+        background: var(--green-color);
+        color: var(--background-color);
+        border-radius: 4px;
+        font-size: 0.6rem;
+    }
+
+    .button a#contact-me {
+        font-size: 0.6rem;
+    }
+
+    .button a#github img {
+        width: 30px;
+        margin-left: 20px;
+    }
+
+    div.title h1 {
+        font-size: 1rem;
+    }
+
+    .container.Column{
+        margin: 0;
+    }
+
+    #about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    #about-me p {
+        display: flex;
+        
+        margin: 0;
+        font-size: 1rem;
+        text-align: justify;
+        width: 300px;
+    }
+
+    #contact {
+        display: flex;
+        margin: 0;        
+    }
+    
+    .contact-text a {
+        display: none;
+    }
+    
+    .contact-text h2,
+    h3 {
+        display: none;
+    }
+    
+    div.icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    .container-flex {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin: 0;
+
+    }
+
+    section#projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    div.box-shadow {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 290px;
+        height: 210px;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+    
+    #projects div.img-projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: auto;
+        margin: 0;
+
+    }
+
+    div.img-projects a > img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: auto;
+    }
+    
+    div.box-shadow h1 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-top: 160px;
+    }
+    
+    div.box-shadow p {
+
+        margin-left: 10px;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    section#services {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+    }
+    
+    #services div.box-shadow {
+        border-bottom: 3px solid var(--green-color);
+    }
+    
+    #services img.services-icons {
+        width: 100px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    
+    div.box-shadow p.service-text {
+        font-size: 1rem;
+        padding-left: 35px;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    section#skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .box-shadowSkills {
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        
+        margin: 10px;
+        border-radius: 8px;
+    }
+    
+    .box-shadowSkills img {
+        width: 30px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        margin-top: 100px;
+    }
+    
+    .footer p {
+        display: flex;
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    
+    .footer span {
+        font-weight: 800;
+        margin-left: 5px;
+    }
 }
