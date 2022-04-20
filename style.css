@@ -319,9 +319,9 @@ footer {
     margin-left: 5px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     body {
-        width: 320px;
+        width: 425px;
         margin: 0;
         padding: 0;
     }
@@ -354,10 +354,16 @@ footer {
         display: none;
     }
 
-    #presentation {
+    section#presentation {
         display: flex;
         justify-content: center;
-        margin: 0;
+        align-items: center;
+    }
+
+    #presentation {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
     }
 
     #presentation .image {
@@ -372,6 +378,10 @@ footer {
         font-size: 0.8rem;
     }
 
+    div.button {
+        display: flex;
+        justify-content: center;
+    }
 
     .button a#cv {
         background: var(--green-color);
@@ -386,7 +396,7 @@ footer {
 
     .button a#github img {
         width: 30px;
-        margin-left: 20px;
+        margin-right: 0;
     }
 
     div.title h1 {
@@ -415,6 +425,7 @@ footer {
 
     #contact {
         display: flex;
+        justify-content: center;
         margin: 0;        
     }
     
@@ -431,7 +442,8 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: 0;
+        margin-right: 0;
         
     }
 
