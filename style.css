@@ -321,7 +321,6 @@ footer {
 
 @media (max-width: 425px) {
     body {
-        width: 100vh;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -404,7 +403,7 @@ footer {
         font-size: 1rem;
     }
 
-    .container.Column{
+    .container.Column {
         margin: 0;
     }
 
@@ -417,7 +416,7 @@ footer {
 
     #about-me p {
         display: flex;
-        
+
         margin: 0;
         font-size: 1rem;
         text-align: justify;
@@ -427,35 +426,33 @@ footer {
     #contact {
         display: flex;
         justify-content: center;
-        margin: 0;        
+        margin: 0;
     }
-    
+
     .contact-text a {
         display: none;
     }
-    
+
     .contact-text h2,
     h3 {
         display: none;
     }
-    
+
     div.icons {
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
         margin-left: 0;
         margin-right: 0;
-        
     }
 
     .container-flex {
         display: flex;
-        
+
         justify-content: center;
         align-items: center;
         width: 300px;
         margin: 0;
-
     }
 
     section#projects {
@@ -474,7 +471,7 @@ footer {
         margin-top: 10px;
         border-radius: 2px;
     }
-    
+
     #projects div.img-projects {
         display: flex;
         justify-content: center;
@@ -482,7 +479,6 @@ footer {
         width: 280px;
         height: auto;
         margin: 0;
-
     }
 
     div.img-projects a > img {
@@ -492,16 +488,15 @@ footer {
         width: 280px;
         height: auto;
     }
-    
+
     div.box-shadow h1 {
         font-size: 1rem;
         font-weight: 400;
         margin-left: 10px;
         margin-top: 160px;
     }
-    
-    div.box-shadow p {
 
+    div.box-shadow p {
         margin-left: 10px;
         font-size: 0.8rem;
         font-weight: 400;
@@ -511,19 +506,18 @@ footer {
         display: flex;
         justify-content: center;
         margin: 0;
-
     }
-    
+
     #services div.box-shadow {
         border-bottom: 3px solid var(--green-color);
     }
-    
+
     #services img.services-icons {
         width: 100px;
         padding-top: 20px;
         padding-left: 20px;
     }
-    
+
     div.box-shadow p.service-text {
         font-size: 1rem;
         padding-left: 35px;
@@ -537,17 +531,17 @@ footer {
         justify-content: center;
         margin: 0;
     }
-    
+
     .box-shadowSkills {
         display: flex;
         justify-content: center;
         width: 50px;
         height: 50px;
-        
+
         margin: 10px;
         border-radius: 8px;
     }
-    
+
     .box-shadowSkills img {
         width: 30px;
     }
@@ -560,15 +554,16 @@ footer {
         height: 60px;
         margin-top: 100px;
     }
-    
+
     .footer p {
         display: flex;
         font-size: 0.7rem;
         font-weight: 400;
     }
-    
+
     .footer span {
         font-weight: 800;
         margin-left: 5px;
     }
 }
+
