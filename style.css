@@ -198,7 +198,7 @@ div.image  img{
 
 #contact {
     display: flex;
-
+    justify-content: center;
     margin-top: 100px;
     margin-left: 300px;
     margin-right: 300px;
