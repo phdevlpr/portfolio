@@ -22,6 +22,7 @@ body {
     height: auto;
     scroll-behavior: auto;
     overflow-x: hidden;
+    margin: 0px;
 }
 
 a {
@@ -33,12 +34,13 @@ section {
 }
 
 .container {
-    margin-left: 8rem;
-    margin-right: 8rem;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1920px;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
 header {
@@ -83,14 +85,30 @@ nav a {
 nav a:hover {
     color: var(--background-color);
     background-color: var(--green-color);
-    border-radius: 2px;
+    border-radius: .5rem;
     transition: 1s;
 }
 
 #presentation {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div.presentation-box.container {
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
     height: auto;
+}
+
+#presentation img.img-profile {
+    width: 300px;
+    margin: 0px;
+    border-radius: 150px;
+
 }
 
 #presentation .name {
@@ -139,8 +157,9 @@ nav a:hover {
     margin-left: 50px;
 }
 
-.image {
-    width: 15vw;
+div.image  img{
+    width: 300px;
+    margin: 0px;
 }
 
 .Column {
@@ -170,9 +189,11 @@ nav a:hover {
 
 #about-me p {
     color: var(--grey-color-light);
-    width: 50vw;
+
+    font-size: 1.5rem;
     margin-top: 30px;
     text-align: center;
+    max-width: 1500px;
 }
 
 #contact {
@@ -225,6 +246,7 @@ div.title {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
     margin: 0;
     padding: 0;
     width: 1200px;
@@ -238,7 +260,7 @@ div.box-shadow {
     border-radius: 2px;
 }
 
-#projects div.img-projects {
+#projects div.img-projects img {
     position: absolute;
     background-color: #0c0c0c;
 
