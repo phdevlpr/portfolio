@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <title>Paulo Silva</title>
+    </head>
+
+    <body class="container">
+        <header id="header">
+            <div class="top-bar">
+                <div class="branding">
+                    <h1>paulosilva</h1>
+                </div>
+                <button
+                    id="menu-button"
+                    class="navbar-burger"
+                    onclick="toggleMenu()"
+                >
+                    <span id="menu-button-open"></span>
+                    <span id="menu-button-close"></span>
+                </button>
+
+                <div class="menu">
+                    <nav>
+                        <a
+                            class="links"
+                            href="#home"
+                            style="animation-delay: 0.2s"
+                            >home</a
+                        >
+                        <a class="links" href="#about" style="animation-delay: 0.2s"
+                            >sobre</a
+                        >
+                        <a class="links" href="#portfolio" style="animation-delay: 0.2s"
+                            >portfolio</a
+                        >
+                        <!-- link para blog futuro
+                    <a class="links" href="#" style="animation-delay: 0.2s">blog</a>
+                    -->
+                        <a class="links" href="#contact" style="animation-delay: 0.2s"
+                            >contato</a
+                        >
+                    </nav>
+                </div>
+                
+            </div>
+        </header>
+        <main id="main" class="container">
+            <section id="home" class="section">
+                <div id="write-text">
+                </div>
+                <div class="container-rocket">
+                    <div class="rocket-img">
+                        <a href="#about">
+                            <img
+                                src="/assets/rocket.svg" loading="lazy"
+                                alt="ícone SVG de um foguete na cor branca"/> 
+                        </a>
+                        <div class="text-rocket">
+                            <p>toque no foguete</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="about" class="hidden section">
+                <div class="container flex">
+                    <div class="text-about">
+                        <h1 class="title01">.sobre</h1>
+                        <h2>Eu sou um desenvolvedor residente em um pequeno paraíso em Minas Gerais, Brasil, chamado Carrancas.</h2>
+                        <p>
+                            Em meados de 2019 eu descobri o mundo do desenvolvimento e programação, então mergulhei nesse mundo com o objetivo de contribuir para o mundo através da tecnologia. Quando não estou escrevendo linhas de códigos coloridas, você pode me encontrar em casa com minha esposa e filhos (e também minha border collie vulgo nome Pipoca), brincando, cozinhando, estudando, ou por ai em qualquer lugar vivendo e fazendo coisas comuns.  Afinal...<br><em>&ldquo;o comum é o novo extraordinário!&rdquo;</em>
+                        </p>
+                        <div class="my-img">
+                            <img src="/assets/images/Foto Perfil Profissional.png" loading="lazy" alt="">
+                        </div>
+                        <h1 class="title02">.experiências & habilidades</h1>
+                        <p>
+                            Desde o início da minha jornada pelo mundo do desenvolvimento e programação, pude adquirir as habilidades para desenvolver sites profissionais com design adaptativo para quaisquer dispositivos utilizando HTML, CSS e javascript, SEO e claro, uma boa copy. Hoje estou me graduando em Análise e Desenvolvimento de Sistemas, e estou me descobrindo no mundo obscuro do desenvolvimento BackEnd usando a temível linguagem Java.
+                        </p>
+
+                        <h1 class="title02">.fatos curiosos (ou nem tanto..)</h1>
+                        <p>
+                            1° fato - apesar de ser um amante da tecnologia, adoro passar um tempo longe dela, afinal ainda pude deslumbrar de uma infância sem ela e com isso sempre tiro um tempo do meu dia ou semana para me afastar um pouco.
+                        </p>
+                        <p>
+                            2° fato - cuidado comigo, sou faixa branca 1 grau na arte suave chamada jiu-jitsu! (só apanho..)
+                        </p>
+                        <p>
+                            3° fato - amo caminhar nas estradas de terra da minha cidade, e por falar nisso, estou precisando fazer mais isso, é sério!
+                        </p>
+                        <p>
+                            4° fato - sou um cinéfilo assíduo.
+                        </p>
+                        <p>
+                            5° fato - tá querendo me conhecer né ? Me mande uma mensagem, não tenha medo, não vou usar minhas habilidades de artes marciais rsrs.
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="portfolio" class="hidden">
+                <div class="portfolio-items">
+                    <h1 class="title01">.projetos</h1>
+                    <div class="projects">
+                        <a href="https://phdevlpr.github.io/liriamGleyg/" target="_blank">
+                            <img src="/assets/pscLiriam.png" loading="lazy" alt="">
+                            <h2>Landing Page Psicologia</h2>
+                            <p>Tecnologias: HMTL, CSS, Javascrip, SEO</p>
+                        </a>
+                    </div>
+                    <div class="projects"> 
+                        <a href="https://phdevlpr.github.io/originSix/">
+                            <img src="/assets/beautySalon.png" loading="lazy" alt="">
+                            <h2>Landing Page Beauy Salon</h2>
+                            <p>Tecnologias: HTML, CSS, Javascript. (case de estudo)</p>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="https://phdevlpr.github.io/telaLoginDark/">
+                            <img src="/assets//telaLogindark.png" loading="lazy" alt="">
+                            <h2>Tela de Login Reponsiva</h2>
+                            <p>Tecnologias: HTML, CSS. (case de estudo)</p>
+                        </a>
+                    </div>
+                    <div class="text-end-portfolio">
+                        <h1>O próximo pode ser o seu! Bora !?</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="hidden section">
+                <div>
+                    <div class="contact-text">
+                        <h1 class="title01">.contato</h1>
+                        <h2>Entre em contato comigo via redes sociais. </h2>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/paulohenriquedev/" target="_blank"><i class="ph-fill ph-linkedin-logo"></i>linkedin</a>
+                            <a href="https://www.instagram.com/paulosilva.tech/" target="_blank"><i class="ph-fill ph-instagram-logo"></i>instagram</a>
+                            <a href="https://github.com/phdevlpr" target="_blank"><i class="ph-fill ph-github-logo"></i>github</a>
+                        </div>
+                    </div>
+                    <div id="form" class="contact-text">
+                        <h2> ou me envie um email.</h2>
+                        <form id="emailForm" method="POST">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="digite aqui seu nome" required>
+                    
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seu email" required>
+                    
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="sua mensagem"maxlength="300"></textarea>
+                    
+                            <button type="button" onclick="sendMail()" >enviar email</button>
+                            <p id="confirmationMessage" style="display: none;">email enviado com sucesso!</p>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <button id="scrollToTopButton" class="scrollToTopButton" onclick="scrollToTop()"><img src="/assets/icons/upload.svg" alt=""></button>
+        <footer id="main-footer">
+            <div class="footer">
+                <p>
+                    &copy; 2023
+                </p>
+                <p>
+                    <NAME>paulo silva
+                </p>
+            </div>
+        </footer>
+
+        
+    <script type="text/javascript" src="/src/script.js"></script>
+    </body>
+</html>
