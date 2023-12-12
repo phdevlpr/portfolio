@@ -301,7 +301,7 @@ div.rocket-img a > img {
     justify-content: center;
     align-items: center;
     color: var(--color1);
-    width: calc(50vw - 2vw + 2vh);
+    width: calc(50vw - 10vw + 10vh);
     height: auto;
     border: none;
     animation: rocket-appear 2s ease-in-out;
@@ -417,7 +417,7 @@ div.rocket-img a > img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 1rem;
 }
 
 .projects {
@@ -430,26 +430,26 @@ div.rocket-img a > img {
     display: block;
 }
 
-#portfolio img {
-    max-width: 80vw;
+div.projects a img {
+    max-width: 300px;
     height: auto;
 }
 
 #portfolio h1.title01 {
     color: var(--light-green);
-    font-size: calc(3rem + 1rem - 1rem);
+    font-size: calc(3rem + 3rem - 3rem);
     font-weight: 400;
 }
 
 #portfolio h2 {
     color: var(--dark-green);
-    font-size: calc(1.2rem + 1rem - 1rem);
+    font-size: calc(1.2rem + 1.2rem - 1.2rem);
     font-weight: 400;
 }
 
 #portfolio p {
     color: var(--color1);
-    font-size: calc(1rem + .5rem - .5rem);
+    font-size: calc(1rem + 1rem - 1rem);
     font-weight: 100;
 }
 
@@ -637,52 +637,63 @@ textarea {
 }
 
 
+/*TABLETS e IPADS*/
+@media screen and (min-width: 768px ) and (max-width: 1023px) {
+    .containter {
+        max-width: 1023px;
+    }
 
+    #header {
+        max-width: 1023px;
+    }
 
-/* .container {
-    margin:0 auto;
-    max-width: 1360px;
+    #write-text {
+        margin-top: 2vh;
+        font-size: calc(2rem + 2rem - 2rem);
+    }
+
+    div.rocket-img a > img {
+        height: 30vh;
+        margin-bottom: 5rem;
+    }
+
+    div.projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+
+    div.projects a img {
+        max-width: 600px;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .text-end-portfolio h1 {
+        width: 70vw;
+    }
+
+    #contact {
+        margin: 0 2rem;
+
+    }
+
+    input, textarea {
+        width: 80vw;
+    }
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .top-bar button {
+        display: none;
+    }
+
+    div.menu {
+        display: show;
+    }
 }
-
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.menu a {
-    float: left;
-    color: var(--color1);
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-right: 2rem;
-    padding: .3rem;
-}
-
-.menu a:hover {
-    border: 1px solid var(--color1);
-    border-radius: 2px;
-    transition: 0.2s;
-}
-
-.menu-list {
-    display: flex;
-
-}
-
-.branding {
-    float: right;
-    color: var(--color1);
-    font-weight: 400;
-    font-size: 1rem;
-}
-*/
-
